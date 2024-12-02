@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+.site-header {
+    background: linear-gradient(135deg, #0b0235, #7d2e2e);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+  
+.logo-text {
+    font-size: 1.5rem;
+}
+  
+.navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.navigation li {
+    margin-left: 2rem;
+}
+  
+.navigation a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+  
+.navigation a:hover {
+    color: #0b0235;
+}
