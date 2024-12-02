@@ -1,15 +1,17 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-  }
+    background-color: rgb(24, 18, 77);
+    color: white;
+}
   
 .site-header {
-    background: linear-gradient(135deg, #0b0235, #7d2e2e);
+    background: linear-gradient(135deg, #2f00ff, #5eff00);
     color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-  
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -42,4 +44,47 @@ body {
   
 .navigation a:hover {
     color: #0b0235;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    text-align: center;
+}
+
+.widget {
+    width: 300px;
+    height: 150px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #0b0235, #0f224b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgb(255, 255, 255);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.widget:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgb(255, 255, 255);
+}
+.widget a {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+.widget a:hover {
+    text-decoration: none;
+}
+.widget span {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
