@@ -3,8 +3,11 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: rgb(24, 18, 77);
     color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-  
+
 .site-header {
     background: linear-gradient(135deg, #2f00ff, #5eff00);
     color: white;
@@ -65,26 +68,28 @@ html {
     box-shadow: 0 8px 16px rgb(255, 255, 255);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    margin: auto;
 }
+
 .widget:hover {
     transform: translateY(-5px);
     box-shadow: 0 16px 32px rgb(255, 255, 255);
 }
-.widget a {
+
+.widget button {
+    background: linear-gradient(135deg, #2f00ff, #5eff00);
     color: white;
     font-family: Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    text-decoration: none;
-    text-align: center;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.widget a:hover {
-    text-decoration: none;
-}
-.widget span {
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
+
+.widget button:hover {
+    background: linear-gradient(135deg, #5eff00, #2f00ff);
+    transform: scale(1.05);
 }
