@@ -1,18 +1,28 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: rgb(24, 18, 77);
+    background-color: rgb(21, 16, 68);
     color: white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+main {
+    margin-top: 80px;
+}
+
 .site-header {
-    background: linear-gradient(135deg, #2f00ff, #5eff00);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     color: white;
     padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 2px rgb(255, 255, 255);
+    backdrop-filter: blur(40px);
+    background-color: #361e9c48;
 }
 
 .container {
@@ -46,50 +56,48 @@ body {
 }
   
 .navigation a:hover {
-    color: #0b0235;
+    color: #000000;
 }
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 #home {
     text-align: center;
 }
-
-.widget {
-    width: 300px;
-    height: 150px;
-    border-radius: 15px;
-    background: linear-gradient(135deg, #0b0235, #0f224b);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 16px rgb(255, 255, 255);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    margin: auto;
-}
-
-.widget:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 16px 32px rgb(255, 255, 255);
+#projets {
+    text-align: center;
 }
 
 .widget button {
-    background: linear-gradient(135deg, #2f00ff, #5eff00);
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(135deg, #0b0235, #0f224b);
     color: white;
     font-family: Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    border: none;
-    border-radius: 8px;
+    border: green;
+    border-radius: 15px;
     padding: 10px 20px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
 }
 
 .widget button:hover {
-    background: linear-gradient(135deg, #5eff00, #2f00ff);
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgb(255, 255, 255);
 }
+
+#language-selector {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+

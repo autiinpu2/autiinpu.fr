@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>autiinpu</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>autiinpu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
     <main>
@@ -13,23 +13,33 @@
               <h1 class="logo-text">autiinpu's website</h1>
               <nav class="navigation">
                 <ul>
-                  <li><a href="#home">Accueil</a></li>
-                  <li><a href="#projets">Projets</a></li>
+                    <li><a href="#home" id= "home-header">Home</a></li>
+                    <li><a href="#projets" id= "project-header">Projects</a></li>
                 </ul>
-              </nav>
+                <select id="language-selector" onchange="changeLanguage()">
+                  <option value="en">&#x1f1ec;&#x1f1e7; English</option>
+                  <option value="fr">&#x1f1eb;&#x1f1f7; Français</option>
+                </select>
+            </nav>
+            
             </div>
           </header>
           <section id="home">
-            <h2>My projets</h2>
+            <h2 id="home-title">Welcome to my website</h2>
+            <p id="home-text">Hello! I'm Autiinpu, a developer that never finishes a single project.</p>
+            <p id="beginner">Beginner in web development</p>
+        </section>
+        <section id="projets">
+            <h2 id="projects-title">My projects</h2>
             <div class="widget">
-              <button onclick="window.open('https://www.dring-time.fr', '_blank')">Dring time</button>
-            </div>            
-          </section>
-          <section id="projets">
-          </section>
+                <button onclick="window.open('https://www.dring-time.fr')">Dring time</button>
+                <button onclick="window.open('https://github.com/autiinpu2/autiinpu.fr')">autiinpu.fr</button>
+            </div>
+        </section>
+        
     </main>
     <footer>
-
+        <p>&copy; 2024 autiinpu</p>
     </footer>
 </body>
 </html>
