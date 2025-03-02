@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: rgb(21, 16, 68);
-    color: white;
+    background-color: #5d6569;
+    color: #f5f5f5;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -20,9 +20,9 @@ main {
     z-index: 1000;
     color: white;
     padding: 1rem 0;
-    box-shadow: 4px 2px rgb(255, 255, 255);
+    box-shadow: 0px 4px 10px rgba(00, 00, 00, 0.33);
     backdrop-filter: blur(40px);
-    background-color: #361e9c48;
+    background-color: rgba(38, 0, 204, 0.28);
 }
 
 .container {
@@ -74,23 +74,22 @@ html {
 .widget button {
     width: 300px;
     height: 150px;
-    background: linear-gradient(135deg, #0b0235, #0f224b);
+    background: linear-gradient(135deg, #333333, #0011ffa2);
     color: white;
     font-family: Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    border: green;
+    border: 2px solid #2e343d;
     border-radius: 15px;
     padding: 10px 20px;
-    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    box-shadow: 0 4px 8px #242728;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin: 10px;
 }
 
 .widget button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 16px 32px rgb(255, 255, 255);
+    transform: translateY(-10px);
 }
 
 #language-selector {
@@ -101,3 +100,10 @@ html {
     width: 200px;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    color: #f5f5f5;
+    margin-top: auto;
+}

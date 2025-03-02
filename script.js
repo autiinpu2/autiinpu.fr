@@ -3,6 +3,7 @@ const translations = {
         homeTitle: "Welcome to my website",
         homeText: "Hello! I'm Autiinpu, the developer that never finishes a single project.",
         beginner: "Beginner in web development",
+        pythonDev: "Python Developer",
         projectsTitle: "My projects",
         homeHeader: "Home",
         projectsHeader: "Projects"
@@ -11,7 +12,7 @@ const translations = {
         homeTitle: "Bienvenue sur mon site",
         homeText: "Bonjour ! Je suis Autiinpu, le développeur qui ne termine jamais un seul projet.",
         beginner: "Débutant en développement web",
-        contributor: "Contributeur à des projets open-source",
+        pythonDev: "Developpeur Python",
         projectsTitle: "Mes projets",
         homeHeader: "Acceuil",
         projectsHeader: "Projets"
@@ -23,7 +24,7 @@ function changeLanguage() {
     document.getElementById("home-title").innerText = translations[lang].homeTitle;
     document.getElementById("home-text").innerText = translations[lang].homeText;
     document.getElementById("beginner").innerText = translations[lang].beginner;
-    document.getElementById("contributor").innerText = translations[lang].contributor;
+    document.getElementById("pythonDev").innerText = translations[lang].pythonDev;
     document.getElementById("projects-title").innerText = translations[lang].projectsTitle;
     document.getElementById("home-header").innerText = translations[lang].homeHeader;
     document.getElementById("project-header").innerText = translations[lang].projectsHeader;
