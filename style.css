@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 
 .site-header {
@@ -20,8 +20,8 @@ main {
     z-index: 1000;
     color: white;
     padding: 1rem 0;
-    box-shadow: 0px 4px 10px rgba(00, 00, 00, 0.33);
-    backdrop-filter: blur(40px);
+    box-shadow: 0rem 0.25rem 0.625rem rgba(00, 00, 00, 0.33);
+    backdrop-filter: blur(2.5rem);
     background-color: rgba(38, 0, 204, 0.28);
 }
 
@@ -29,7 +29,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -72,37 +72,38 @@ html {
 }
 
 .widget button {
-    width: 300px;
-    height: 150px;
+    width: 18.75rem;
+    height: 9.375rem;
     background: linear-gradient(135deg, #333333, #0011ffa2);
     color: white;
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
-    border: 2px solid #2e343d;
-    border-radius: 15px;
-    padding: 10px 20px;
-    box-shadow: 0 4px 8px #242728;
+    border: 0.125rem solid #2e343d;
+    border-radius: 0.938rem;
+    padding: 0.625rem 1.25rem;
+    box-shadow: 0 0.25rem 0.5rem #242728;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 .widget button:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem);
+    background: linear-gradient(135deg, #333333, #0011ff);
 }
 
 #language-selector {
-    font-size: 16px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 200px;
+    font-size: 1rem;
+    padding: 0.313rem;
+    border-radius: 0.313rem;
+    border: 0.063rem solid #ccc;
+    width: 12.5rem;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
     background: #1a1a1a;
     color: #f5f5f5;
     margin-top: auto;
